@@ -49,7 +49,6 @@ inserirValor.addEventListener('click', () => {
                 return prev.id > current.id ? prev : current;
             }).id
         }
-        console.log(usedID + 1);
         insertedValues.push({
             id: usedID + 1,
             value: Number(NewValueInput.value),

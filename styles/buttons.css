@@ -45,3 +45,10 @@
     color: var(--color-brand-1);
     border: 1.5px solid var(--color-brand-1);
 }
+
+
+.activeBttn{    
+    background-color: var(--color-brand-3);
+    color: var(--color-brand-1);
+    border: 1.5px solid var(--color-brand-1);
+}

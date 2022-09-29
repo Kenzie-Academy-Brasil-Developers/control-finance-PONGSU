@@ -26,14 +26,28 @@ main{
     top: 150px;
 }
 
+#main-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 14px;
+    flex-wrap: wrap;
+}
+
 #filter{
-    margin-top: 38px;
+    margin-top: 28px;
     display: flex;
     flex-wrap: wrap;
     gap: 14px;
+    max-width: 95vw;
+}
+#filter li input{
+    max-width: 95vw;
+    
 }
 #filter li label{
     padding: 7.5px 14px;
+    max-width: 95vw;
 }
 
 #sumZone{
@@ -91,4 +105,44 @@ main{
 }
 .deleteRegister:hover #delete-color3{
     stroke: #E9ECEF;
+}
+
+#noRegister-msg-wrapper{
+    background-color: var(--color-grey-5);
+    border: 1.5px dashed var(--color-grey-3);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 85px;
+}
+#noRegister-msg-wrapper:hover {
+    background-color: var(--color-grey-4);
+    border: 1.5px dashed var(--color-grey-2);
+}
+
+#noRegister-msg-wrapper:hover p{
+    text-decoration: underline;
+}
+
+#noRegister-msg-wrapper h3{
+    color: var(--color-grey-1);
+}
+
+#noRegister-msg-wrapper p{
+    color: var(--color-grey-2);
+}
+
+
+@media (min-width: 600px){
+#main-header{
+    flex-direction: row;
+    align-items: center;
+}
+
+    #filter{
+        flex-direction: row;
+        margin-top: 0;
+    }
 }

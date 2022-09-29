@@ -1,0 +1,134 @@
+.open-post-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+}
+
+#open-post {
+    position: absolute;
+    top: 100px;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 40px 24px;
+    gap: 36px;
+    width: 761px;
+    max-width: 95vw;
+    background: #FFFFFF;
+    border-radius: 8px;
+    max-height: 80vh;
+    gap: 32px;
+    overflow: auto; 
+}
+
+#post-close {
+    position: absolute;
+    top: 11px;
+    right: 15px;
+    border: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: var(--color-grey-3);
+    background-color: var(--color-grey-5);
+    font-family: 'Nunito';
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 0px;
+}
+
+#post-close:hover {
+    color: var(--color-grey-2);
+    background-color: var(--color-grey-4);
+    cursor: pointer;
+}
+
+#open-post-header {
+    color: var(--color-grey-1);
+    height: 52px;
+    display: flex;
+    gap: 12px;
+}
+
+#open-post-header img{
+    max-height: 100%;
+}
+
+#open-post-header span{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#open-post p{
+    position: relative;
+    top: -12px;
+}
+
+.view {
+    display: flex;
+}
+
+.view #open-post {
+    animation: animateModal 0.513s;
+}
+
+@keyframes animateModal {
+    0% {
+        transform: translate(-50%, 50%);
+        opacity: 0;
+    }
+
+    60% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 600px){
+
+    #open-post-header span h5{
+        font-size: 12px;
+    }
+    
+    #open-post h1{
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+}
+
+
+@media (max-width: 349px){
+    #open-post-header span h3{
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        color: var(--color-grey-1)
+
+    }
+    
+    #open-post-header span h5{
+        font-size: 12px;
+    }
+    
+    #open-post h1{
+        font-weight: 600;
+        font-size: 19px;
+        line-height: 20px;
+    }
+
+    #open-post p{        
+    font-size: 13px;
+    }  
+}

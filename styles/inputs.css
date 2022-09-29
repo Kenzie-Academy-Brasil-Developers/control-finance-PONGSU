@@ -1,0 +1,28 @@
+input {
+    color: var(--color-grey-3);
+    height: 44px;
+    padding: 0 16px;
+    font-family: var(--font-family-1);
+    border-radius: 8px;
+    border: 2px solid var(--color-grey-4);
+}
+
+input:focus {
+    color: var(--color-grey-1);
+    outline: 2px solid var(--color-brand-1);
+    border: none;
+}
+
+input:valid {
+    color: var(--color-grey-2);
+}
+
+.alert{
+    border: none;
+    outline: 2px solid var(--color-like);
+}
+
+.alert:focus ,.alert:valid {
+    border: none;
+    outline: 2px solid var(--color-like);
+}

@@ -1,0 +1,47 @@
+.primaryBttn {
+    background-color: var(--color-brand-1);
+    color: var(--fixed-white);
+    padding-inline: 0.875rem;
+    height: 2rem;
+    border: 1.5px solid var(--color-brand-1);
+    border-radius: 8px;
+    letter-spacing: 0.4px;
+}
+
+.primaryBttn:hover {
+    background-color: var(--color-brand-2);
+    border: 1.5px solid var(--color-brand-2);
+
+}
+
+.greylowBttn {
+    background-color: var(--color-grey-5);
+    color: var(--color-grey-2);
+    padding-inline: 0.875rem;
+    height: 2rem;
+    border: 1.5px solid var(--color-grey-5);
+    border-radius: 8px;
+    letter-spacing: 0.4px;
+}
+
+.greylowBttn:hover {
+    background-color: var(--color-grey-4);
+    border: 1.5px solid var(--color-grey-4);
+    color: var(--color-grey-1);
+}
+
+.outlineBttn {
+    background-color: var(--fixed-white);
+    color: var(--color-grey-2);
+    padding-inline: 0.875rem;
+    height: 2rem;
+    border: 1.5px solid var(--color-grey-5);
+    border-radius: 8px;
+    letter-spacing: 0.4px;
+}
+
+.outlineBttn:hover, .outlineBttn:active {    
+    background-color: var(--color-brand-3);
+    color: var(--color-brand-1);
+    border: 1.5px solid var(--color-brand-1);
+}

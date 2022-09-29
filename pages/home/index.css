@@ -1,1 +1,94 @@
-/* Desenvolva a estilização da sua página aqui */
+header{
+    background-color: var(--color-grey-5);
+    padding: 28px 0;
+    position: fixed;
+    width: 100vw;
+    z-index: 10;
+}
+
+#logo{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#control{
+    color: var(--color-brand-1);
+    margin-right: 0.5rem;
+}
+
+header div button{
+    width: 100%;
+    color: var(--color-mode);
+}
+
+main{
+    position: relative;
+    top: 150px;
+}
+
+#filter{
+    margin-top: 38px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+#filter li label{
+    padding: 7.5px 14px;
+}
+
+#sumZone{
+    margin: 28px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    padding: 14px 16px;
+    background-color: var(--color-grey-5);
+    border-radius: 8px;
+}
+
+.registered-value{
+    border: 1.5px solid var(--color-grey-5);
+    border-radius: 8px;
+    padding: 12.5px 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 42px;
+    margin-bottom: 20px;
+}
+.registered-value span{
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 31.75px;
+}
+
+.valueType{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-grey-2);
+    background-color: var(--color-grey-4);
+    border-radius: 4px; 
+    height: 26px;
+    width: 68px;     
+    padding: 7px 14px;  
+}
+.deleteRegister{
+    border: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+}
+.deleteRegister:hover #delete-color1{
+    fill: #F1F3F5;   
+}
+.deleteRegister:hover #delete-color2{
+    fill: #495057;
+}
+.deleteRegister:hover #delete-color3{
+    stroke: #E9ECEF;
+}

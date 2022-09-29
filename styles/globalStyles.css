@@ -4,6 +4,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  list-style: none;
+  user-select: none;
 }
 
 :root {
@@ -20,6 +22,8 @@
   --fixed-white: #ffffff;
   --color-mode: #ffffff;
 
+  
+  --font-size-0: 2rem;
   --font-size-1: 1.25rem;
   --font-size-2: 1rem;
   --font-size-3: 0.875rem;
